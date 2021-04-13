@@ -32,7 +32,7 @@ print(graph1, graph2)
 from gklearn.ged.env import GEDEnv
 
 
-ged_env = GEDEnv() # initailize GED environment.
+ged_env = GEDEnv() # initialize GED environment.
 ged_env.set_edit_cost('CONSTANT', # GED cost type.
                       edit_cost_constants=[3, 3, 1, 3, 3, 1] # edit costs.
 					  )  
@@ -52,7 +52,7 @@ ged_env.run_method(listID[0], listID[1]) # run.
 
 pi_forward = ged_env.get_forward_map(listID[0], listID[1]) # forward map.
 pi_backward = ged_env.get_backward_map(listID[0], listID[1]) # backward map.
-dis = ged_env.get_upper_bound(listID[0], listID[1])	# GED bewteen two graphs.
+dis = ged_env.get_upper_bound(listID[0], listID[1])	# GED between two graphs.
 print(pi_forward)
 print(pi_backward)
 print(dis)
